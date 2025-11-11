@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prime Number Checker</title>
+</head>
+<body>
+  <h2>Prime Number Checker</h2>
+
+  <script>
+    let num = parseInt(prompt("Enter a number:"));
+    let isPrime = true;
+
+    if (num <= 1) {
+      isPrime = false;
+    } else {
+      for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+          isPrime = false;
+          break;
+        }
+      }
+    }
+
+    if (isPrime)
+      document.write(num + " is a Prime Number");
+    else
+      document.write(num + " is NOT a Prime Number");
+  </script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum of Array Elements</title>
+</head>
+<body>
+  <h2>Sum of Array Elements</h2>
+
+  <script>
+   
+    let numbers = [5, 10, 15, 20, 25];
+    let sum = 0;
+
+  
+    for (let i = 0; i < numbers.length; i++) {
+      sum += numbers[i];
+    }
+
+    document.write("Array elements: " + numbers + "<br>");
+    document.write("Sum of array elements = " + sum);
+  </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find Largest Number</title>
+</head>
+<body>
+  <h2>Find Largest Number in an Array</h2>
+
+  <script>
+    let numbers = [12, 45, 7, 89, 23, 56];
+    let largest = numbers[0];
+
+    for (let i = 1; i < numbers.length; i++) {
+      if (numbers[i] > largest) {
+        largest = numbers[i];
+      }
+    }
+
+    document.write("Array elements: " + numbers + "<br>");
+    document.write("Largest number = " + largest);
+  </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Manipulation</title>
+</head>
+<body>
+  <h2>JavaScript Array Manipulation</h2>
+
+  <script>
+    //(create array)
+    let fruits = ["Apple", "Banana", "Mango", "Orange"];
+    document.write("Original Array: " + fruits + "<br><br>");
+
+    //(push)
+    fruits.push("Grapes");
+    document.write("After push('Grapes'): " + fruits + "<br>");
+
+    //(unshift)
+    fruits.unshift("Pineapple");
+    document.write("After unshift('Pineapple'): " + fruits + "<br>");
+
+    //(pop)
+    fruits.pop();
+    document.write("After pop(): " + fruits + "<br>");
+
+    //(shift)
+    fruits.shift();
+    document.write("After shift(): " + fruits + "<br>");
+
+    //(splice)
+    fruits.splice(2, 0, "Kiwi"); 
+    document.write("After splice(2, 0, 'Kiwi'): " + fruits + "<br>");
+
+    //(slice)
+    let sliced = fruits.slice(1, 3);
+    document.write("Slice(1,3): " + sliced + "<br>");
+
+    //(sort)
+    fruits.sort();
+    document.write("Sorted Array: " + fruits + "<br>");
+
+    //(reverse)
+    fruits.reverse();
+    document.write("Reversed Array: " + fruits + "<br>");
+
+    //(concat)
+    let veggies = ["Carrot", "Potato"];
+    let allItems = fruits.concat(veggies);
+    document.write("After concat: " + allItems + "<br>");
+
+   
+
