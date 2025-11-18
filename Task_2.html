@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="University Admission Form for new students">
+    <meta name="keywords" content="university, admission, form, student">
+    <title>University Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>University Admission Form</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post" enctype="multipart/form-data">
+            
+            <!-- Personal Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="fname">First Name*:</label>
+                <input type="text" id="fname" name="fname" required maxlength="50"><br><br>
+
+                <label for="lname">Last Name*:</label>
+                <input type="text" id="lname" name="lname" required maxlength="50"><br><br>
+
+                <label for="dob">Date of Birth*:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="gender">Gender*:</label><br>
+                <input type="radio" id="male" name="gender" value="Male" required> Male
+                <input type="radio" id="female" name="gender" value="Female"> Female<br><br>
+
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number*:</label>
+                <input type="text" id="phone" name="phone" required pattern="[0-9]{10}" maxlength="10" placeholder="10-digit number"><br><br>
+            </fieldset>
+            
+            <!-- Academic Information Section -->
+            <fieldset>
+                <legend>Academic Information</legend>
+
+                <label for="highest_degree">Highest Degree Obtained*:</label>
+                <input type="text" id="highest_degree" name="highest_degree" required maxlength="100"><br><br>
+
+                <label for="institution">Previous Institution*:</label>
+                <input type="text" id="institution" name="institution" required maxlength="100"><br><br>
+
+                <label for="passing_year">Year of Graduation*:</label>
+                <input type="number" id="passing_year" name="passing_year" required min="2000" max="2025"><br><br>
+
+                <label for="marks">Percentage/Grade*:</label>
+                <input type="number" id="marks" name="marks" required min="0" max="100" step="0.1" placeholder="0-100"><br><br>
+
+                <label for="department">Preferred Department*:</label>
+                <select id="department" name="department" required>
+                    <option value="">Select a Department</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Business Administration">Business Administration</option>
+                </select><br><br>
+            </fieldset>
+
+            <!-- Document Upload Section -->
+            <fieldset>
+                <legend>Required Documents</legend>
+
+                <label for="transcript">Upload Transcript*:</label>
+                <input type="file" id="transcript" name="transcript" accept=".pdf, .doc, .docx" required><br><br>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx"><br><br>
+            </fieldset>
+
+            <!-- Interests Section -->
+            <fieldset>
+                <legend>Interests</legend>
+
+                <label for="sports">Interested in Sports?</label>
+                <input type="checkbox" id="sports" name="interests" value="Sports"><br><br>
+
+                <label for="music">Interested in Music?</label>
+                <input type="checkbox" id="music" name="interests" value="Music"><br><br>
+
+                <label for="volunteer">Interested in Volunteering?</label>
+                <input type="checkbox" id="volunteer" name="interests" value="Volunteering"><br><br>
+            </fieldset>
+
+            <!-- Submit and Reset Buttons -->
+            <fieldset>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </fieldset>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 University Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
