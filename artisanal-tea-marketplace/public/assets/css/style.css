@@ -1,0 +1,141 @@
+
+/* ====== Base ====== */
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:#f6f7fb;
+  color:#111827;
+}
+a{color:#0f766e;text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ====== Layout ====== */
+main{padding:0}
+h2{margin:8px 0 14px;font-size:28px;letter-spacing:-0.02em}
+
+/* ====== Cards ====== */
+.card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:14px;
+  padding:16px;
+  box-shadow:0 6px 18px rgba(17,24,39,.06);
+}
+.card + .card{margin-top:12px}
+
+/* ====== Forms ====== */
+.form-stacked{max-width:520px}
+.field{margin-bottom:12px}
+label{
+  display:block;
+  margin:0 0 6px;
+  font-weight:650;
+  color:#111827;
+  font-size:14px;
+}
+input, select, textarea{
+  width:100%;
+  border:1px solid #d1d5db;
+  border-radius:10px;
+  padding:10px 12px;
+  outline:none;
+  background:#fff;
+}
+input:focus, select:focus, textarea:focus{
+  border-color:#0f766e;
+  box-shadow:0 0 0 4px rgba(15,118,110,.12);
+}
+textarea{resize:vertical}
+
+/* ====== Buttons ====== */
+button{
+  border:1px solid #0f766e;
+  background:#0f766e;
+  color:#fff;
+  padding:9px 14px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:650;
+}
+button:hover{filter:brightness(0.95)}
+button:active{transform:translateY(1px)}
+button.secondary{
+  background:#fff;
+  color:#0f766e;
+}
+button.danger{
+  border-color:#dc2626;
+  background:#dc2626;
+}
+
+/* ====== Flash/Alerts ====== */
+.flash{
+  border:1px solid #ffe08a;
+  background:#fff7d6;
+  border-radius:14px;
+  padding:12px 14px;
+  margin:0 0 12px;
+}
+
+/* ====== Header/Nav ====== */
+.topbar{
+  background:#0d3b2e;
+  color:#fff;
+  padding:12px 0;
+}
+.topbar-inner{
+  max-width:900px;
+  margin:0 auto;
+  padding:0 12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.brand{
+  font-weight:800;
+  letter-spacing:-0.02em;
+}
+.navlinks{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.navlinks a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  opacity:.95;
+}
+.navlinks a:hover{
+  opacity:1;
+  text-decoration:underline;
+}
+.inline-form{display:inline;margin:0}
+
+/* Ghost button for header logout */
+.btn-ghost{
+  background:transparent;
+  border:1px solid rgba(255,255,255,.85);
+  color:#fff;
+  padding:6px 10px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:650;
+}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+
+/* Container layout */
+.container{
+  max-width:900px;
+  margin:20px auto;
+  padding:10px;
+}
+.site-footer{
+  text-align:center;
+  padding:20px;
+  color:#6b7280;
+  font-size:14px;
+}
+.btn-link button{ text-decoration:none }
